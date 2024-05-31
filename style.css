@@ -10,18 +10,18 @@ body {
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     */
+    overflow: hidden;
 }
 
 #scroll {
     position: absolute;
     animation-name: slide;
-    animation-duration: 20s;
+    animation-duration: 90s;
     animation-iteration-count: infinite;
 }
 
 img {
     max-width: 95%;
-    animation-name: push;
 }
 
 header {
@@ -31,7 +31,7 @@ header {
     justify-content: center;
     max-width: 100%;
     font-size: 3em;
-    animation-name: fade;
+    height: 100svh;
 }
 
 main {
@@ -47,13 +47,14 @@ main {
     flex-direction: column;
     align-items: center;
     color: #EDB000;
-    transform: rotate3d(1, 0, 0, 30deg);
-    width: 50%;
+    transform: rotate3d(1, 0, 0, 40deg);
+    width: 40%;
     font-size: 1.5em;
 }
 
 h2 {
     color: #0E7487;
+    font-size: 2em;
 }
 
 @keyframes slide {
