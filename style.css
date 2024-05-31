@@ -71,7 +71,7 @@ h1 {
 
 @keyframes slide {
     0% {
-        transform: rotateX(20deg) translateY(50%);
+        transform: rotateX(20deg) translateY(90%);
     }
 
     100% {
