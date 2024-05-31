@@ -16,6 +16,7 @@ body {
     position: absolute;
     animation-name: slide;
     animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 
 img {
@@ -56,11 +57,11 @@ h2 {
 }
 
 @keyframes slide {
-    0% {
-        top: 0%;
+    from {
+        transform: translateY(0%);
     }
 
-    100% {
-        top: -350%;
+    to {
+        transform: translateY(-100%);
     }
 }
