@@ -1,7 +1,6 @@
 body {
-    padding: 0 5%;
-    width: 100wv;
-    background-image: url(space-stars-star-wars-backgrounds-textures-106f3e.png); 
+    margin: 0;
+    background-image: url(space-stars-star-wars-backgrounds-textures-106f3e.png);
     /*background-color:black;
     background-image:
         radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
@@ -13,24 +12,55 @@ body {
     */
 }
 
+#scroll {
+    position: absolute;
+    animation-name: slide;
+    animation-duration: 20s;
+}
+
 img {
-    max-width: 50%;
+    max-width: 95%;
+    animation-name: push;
 }
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    max-width: 100%;
     font-size: 3em;
+    animation-name: fade;
 }
 
 main {
-    color: #EDB000;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-h2 {color: #0E7487;}
+#Text {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #EDB000;
+    transform: rotate3d(1, 0, 0, 30deg);
+    width: 50%;
+    font-size: 1.5em;
+}
+
+h2 {
+    color: #0E7487;
+}
+
+@keyframes slide {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: -350%;
+    }
+}
